@@ -156,10 +156,10 @@ footer ul {
 }
 
 footer ul li {
-    float: left;
   display: block;
   list-style: none;
   margin-right: 24px;
+  width: 200px;
 }
 
 footer ul li a {
