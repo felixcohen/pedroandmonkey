@@ -169,7 +169,7 @@ footer ul li a {
     MOBILE: Menu
    ============== */
 @media screen and (max-device-width: 800px) {
-    body { background: url('/img/full.jpg') #000 no-repeat center center fixed; background-size: cover; }
+    body { background: url('/img/full.png') #000 no-repeat center center fixed; background-size: cover; }
     #bgvid { display: none; }
 }
 
