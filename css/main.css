@@ -147,6 +147,7 @@ h1.title {
     float: none;
       position: static;
   bottom: 0;
+    clear: both;
 }
 
 footer ul {
