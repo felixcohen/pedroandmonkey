@@ -57,12 +57,11 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px "Montserrat", Helvetica, Helvetica Neue, Arial;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
+.main {
+    padding: 30px 0;
 }
 
 video#bgvid {
@@ -80,33 +79,159 @@ video#bgvid {
     background-size: cover;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 250px;
 }
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+header {
+    width: 50%;
+    float: left;
 }
 
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+.main-container {
+    width: 50%;
+    float: left;
 }
 
-.title {
-    color: white;
+a {
+    display: block;
+    padding: 16px 24px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #999;
+    background-color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    border: 1px solid #999;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
+p {
+    margin: 0 0 1rem 0;
+}
+p a {
+    display: inline;
+    padding: 0;
+    font-size: inherit;
+    text-transform: none;
+    background: none;
+    border: 0px;
+}
+
+p a:hover, p a:active {
+     background: none;
+    border: 0px;   
+}
+
+a:hover, a:active {
+    color: black;
+    border: 1px solid black;
+}
+
+h1.title {
+    text-indent: -9999px;
+      display: block;
+      background-image: url('/img/header.png');
+      width: 424px;
+      height: 117px;
+      background-size: cover;
+}
+
+
+.footer-container {
+    width: 100%;
+    float: none;
+      position: static;
+  bottom: 0;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    float: left;
+  display: block;
+  list-style: none;
+  margin-right: 24px;
+}
+
+footer ul li a {
+
+}
 /* ==============
     MOBILE: Menu
    ============== */
 
+   @media only screen and (max-width: 600px) {
+            .wrapper {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            padding-top: 100px;
+        }
+        h1.title {
+            text-indent: -9999px;
+              display: block;
+              background-image: url('/img/header.png');
+              width: 318px;
+              height: 88px;
+              background-size: cover;
+        }
+        .main-container {
+            width: 100%;
+            float: none;
+            clear: both;
+        }
+
+        .main {
+              padding: 30px;
+              background-color: rgba(55,55,55,0.6);
+              color: white;
+              margin-bottom: 50px;
+            }
+
+        .main p a {
+                color: white;
+                text-decoration: underline;
+        }
+
+        .main-container a {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 50%;
+            float: left;
+
+        }
+        footer ul li{
+              float: none;
+              display: block;
+              list-style: none;
+              margin-right: 24px;
+              width: 300px;
+              text-align: center;
+              margin: 0 auto;
+        }
+
+    }
+   @media screen and (min-width: 481px) and (max-width: 959px) {
+
+            .wrapper {
+                width: 720px;
+                margin: 0 auto;
+                position: relative;
+            }
+        }
+
+/* */
 nav ul {
     margin: 0;
     padding: 0;
@@ -139,9 +264,7 @@ nav a:hover {
     MOBILE: Main
    ============== */
 
-.main {
-    padding: 30px 0;
-}
+
 
 .main article h1 {
     font-size: 2em;
@@ -253,8 +376,8 @@ nav a:hover {
    ============ */
 
     .main article {
-        float: left;
-        width: 57%;
+        float: right;
+        width: 67%;
     }
 
     .main aside {
@@ -269,10 +392,6 @@ nav a:hover {
     Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
 }
 
 /* ==========================================================================
